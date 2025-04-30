@@ -9,7 +9,7 @@ Patch loads harmonium soundfont from the 2mbgmgs sound bank.
 
  It features:
  
- 	•	MIDI Control:
+ •	MIDI Control:
 [ctlin 1 1] receives MIDI CC#1 (mod wheel), and maps it to bellows pressure with a 1-second fade time via [line].
 	
  •	Bellows Ramp Control:
@@ -21,7 +21,7 @@ A [delay 1000] introduces a 1-second wait before the bellows ramp begins, mimick
  •	Manual Input:
 Vertical slider and number box allow direct control of bellows pressure; values are scaled and sent as [value 1000] to [line].
 
-	•	Audio Modulation:
+•	Audio Modulation:
 Audio inputs (filt_out, filt_outR) are multiplied by the smoothed bellows signal via [line~], then clipped with clip~ -0.5 0.5 before stereo output.
 
  
